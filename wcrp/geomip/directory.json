@@ -1,0 +1,19 @@
+{
+    "identifier_type": "directory",
+    "scope": "wcrp:geomip",
+    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
+    "seperator": "/",
+    "specs": [
+        "const:geomip",
+        "wcrp:geomip:product",
+        "wcrp:geomip:institute",
+        "wcrp:geomip:model",
+        "wcrp:geomip:experiment",
+        "wcrp:geomip:time_frequency",
+        "wcrp:geomip:realm",
+        "wcrp:geomip:cmor_table",
+        "wcrp:geomip:ensemble",
+        "wcrp:geomip:version",
+        "wcrp:geomip:variable"
+    ]
+}

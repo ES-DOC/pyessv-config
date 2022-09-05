@@ -1,0 +1,16 @@
+{
+    "identifier_type": "filename",
+    "scope": "wcrp:primavera",
+    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s_%(grid_label)s_[%(period_start)s-%(period_end)s].nc",
+    "seperator": "_",
+    "specs": [
+        "wcrp:primavera:variable",
+        "wcrp:primavera:cmor_table",
+        "wcrp:primavera:model",
+        "wcrp:primavera:experiment",
+        "wcrp:primavera:ensemble",
+        "wcrp:primavera:grid_label",
+        "regex:^[0-9]{4}-[0-9]{4}$",
+        "regex:^nc$"
+    ]
+}

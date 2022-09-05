@@ -1,0 +1,20 @@
+{
+    "identifier_type": "directory",
+    "scope": "wcrp:cordex-adjust",
+    "template": "%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(bias_adjustment)s/%(time_frequency)s/%(variable)s/%(version)s",
+    "seperator": "/",
+    "specs": [
+        "const:cordex-adjust",
+        "wcrp:cordex-adjust:product",
+        "wcrp:cordex-adjust:domain",
+        "wcrp:cordex-adjust:institute",
+        "wcrp:cordex-adjust:driving_model",
+        "wcrp:cordex-adjust:experiment",
+        "wcrp:cordex-adjust:ensemble",
+        "wcrp:cordex-adjust:rcm_model",
+        "wcrp:cordex-adjust:bias_adjustment",
+        "wcrp:cordex-adjust:time_frequency",
+        "wcrp:cordex-adjust:variable",
+        "wcrp:cordex-adjust:version"
+    ]
+}

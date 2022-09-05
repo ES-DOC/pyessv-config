@@ -1,0 +1,19 @@
+{
+    "identifier_type": "directory",
+    "scope": "wcrp:cmip5",
+    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
+    "seperator": "/",
+    "specs": [
+        "const:cmip5",
+        "wcrp:cmip5:product",
+        "wcrp:cmip5:institute",
+        "wcrp:cmip5:model",
+        "wcrp:cmip5:experiment",
+        "wcrp:cmip5:time_frequency",
+        "wcrp:cmip5:realm",
+        "wcrp:cmip5:cmor_table",
+        "wcrp:cmip5:ensemble",
+        "wcrp:cmip5:version",
+        "wcrp:cmip5:variable"
+    ]
+}

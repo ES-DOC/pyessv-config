@@ -1,0 +1,17 @@
+{
+    "identifier_type": "dataset",
+    "scope": "wcrp:lucid",
+    "template": "lucid.%(product)s.%(institute)s.%(model)s.%(experiment)s.%(time_frequency)s.%(realm)s.%(cmor_table)s.%(ensemble)s",
+    "seperator": ".",
+    "specs": [
+        "const:lucid",
+        "wcrp:lucid:product",
+        "wcrp:lucid:institute",
+        "wcrp:lucid:model",
+        "wcrp:lucid:experiment",
+        "wcrp:lucid:time-frequency",
+        "wcrp:lucid:realm",
+        "wcrp:lucid:cmor-table",
+        "wcrp:lucid:ensemble"
+    ]
+}

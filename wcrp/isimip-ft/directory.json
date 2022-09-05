@@ -1,0 +1,21 @@
+{
+    "identifier_type": "directory",
+    "scope": "wcrp:isimip-ft",
+    "template": "%(root)s/%(project)s/%(product)s/%(model)s/%(experiment)s/%(impact_model)s/%(sector_short)s/%(social_forcing)s/%(co2_forcing)s/%(irrigation_forcing)s/%(land_use_short)s/%(time_frequency)s/%(variable)s/%(version)s",
+    "seperator": "/",
+    "specs": [
+        "const:isimip-ft",
+        "wcrp:isimip-ft:product",
+        "wcrp:isimip-ft:model",
+        "wcrp:isimip-ft:experiment",
+        "wcrp:isimip-ft:impact_model",
+        "wcrp:isimip-ft:sector_short",
+        "wcrp:isimip-ft:social_forcing",
+        "wcrp:isimip-ft:co2_forcing",
+        "wcrp:isimip-ft:irrigation_forcing",
+        "wcrp:isimip-ft:land_use_short",
+        "wcrp:isimip-ft:time_frequency",
+        "wcrp:isimip-ft:variable",
+        "wcrp:isimip-ft:version"
+    ]
+}

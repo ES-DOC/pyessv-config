@@ -1,0 +1,15 @@
+{
+    "identifier_type": "filename",
+    "scope": "wcrp:geomip",
+    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s[_%(period_start)s-%(period_end)s].nc",
+    "seperator": "_",
+    "specs": [
+        "wcrp:geomip:variable",
+        "wcrp:geomip:cmor_table",
+        "wcrp:geomip:model",
+        "wcrp:geomip:experiment",
+        "wcrp:geomip:ensemble",
+        "regex:^[0-9]{4}-[0-9]{4}$",
+        "regex:^nc$"
+    ]
+}

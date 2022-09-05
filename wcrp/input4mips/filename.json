@@ -1,0 +1,15 @@
+{
+    "identifier_type": "filename",
+    "scope": "wcrp:input4mips",
+    "template": "%(variable_id)s_%(activity_id)s_%(dataset_category)s_%(target_mip)s_%(source_id)s_%(grid_label)s.nc",
+    "seperator": "_",
+    "specs": [
+        "wcrp:input4mips:variable_id",
+        "wcrp:input4mips:activity_id",
+        "wcrp:input4mips:dataset_category",
+        "wcrp:input4mips:target_mip",
+        "wcrp:input4mips:source_id",
+        "wcrp:input4mips:grid_label",
+        "regex:^nc$"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "identifier_type": "dataset",
+    "scope": "wcrp:primavera",
+    "template": "%(project)s.%(activity)s.%(institute)s.%(model)s.%(experiment)s.%(ensemble)s.%(cmor_table)s.%(variable)s.%(grid_label)s",
+    "seperator": ".",
+    "specs": [
+        "const:primavera",
+        "wcrp:primavera:activity",
+        "wcrp:primavera:institute",
+        "wcrp:primavera:model",
+        "wcrp:primavera:experiment",
+        "wcrp:primavera:ensemble",
+        "wcrp:primavera:cmor-table",
+        "wcrp:primavera:variable",
+        "wcrp:primavera:grid-label"
+    ]
+}

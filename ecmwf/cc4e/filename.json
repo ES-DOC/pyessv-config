@@ -1,0 +1,19 @@
+{
+    "identifier_type": "filename",
+    "scope": "ecmwf:cc4e",
+    "template": "%(variable)s_%(project)s_%(work_package)s_%(product)s_%(source_type)s_%(source_data_id)s_%(realization)s_%(domain)s_%(time_frequency)s_[%(period_start)s-%(period_end)s].nc",
+    "seperator": "_",
+    "specs": [
+        "const:cc4e",
+        "ecmwf:cc4e:project",
+        "ecmwf:cc4e:work_package",
+        "ecmwf:cc4e:product",
+        "ecmwf:cc4e:source_type",
+        "ecmwf:cc4e:source_data_id",
+        "ecmwf:cc4e:realization",
+        "ecmwf:cc4e:domain",
+        "ecmwf:cc4e:time_frequency",
+        "regex:^[0-9]{4}-[0-9]{4}$",
+        "regex:^nc$"
+    ]
+}

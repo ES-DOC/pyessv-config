@@ -1,0 +1,18 @@
+{
+    "identifier_type": "filename",
+    "scope": "wcrp:cordex-adjust",
+    "template": "%(variable)s_%(domain)s_%(driving_model)s_%(experiment)s_%(ensemble)s_%(rcm_model)s_%(bias_adjustment)s_%(time_frequency)s[_%(period_start)s-%(period_end)s].nc",
+    "seperator": "_",
+    "specs": [
+        "wcrp:cordex-adjust:variable",
+        "wcrp:cordex-adjust:domain",
+        "wcrp:cordex-adjust:driving_model",
+        "wcrp:cordex-adjust:experiment",
+        "wcrp:cordex-adjust:ensemble",
+        "wcrp:cordex-adjust:rcm_model",
+        "wcrp:cordex-adjust:bias_adjustment",
+        "wcrp:cordex-adjust:time_frequency",
+        "regex:^[0-9]{4}-[0-9]{4}$",
+        "regex:^nc$"
+    ]
+}

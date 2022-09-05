@@ -1,0 +1,18 @@
+{
+    "identifier_type": "directory",
+    "scope": "wcrp:primavera",
+    "template": "%(root)s/%(project)s/%(activity)s/%(institute)s/%(model)s/%(experiment)s/%(ensemble)s/%(cmor_table)s/%(variable)s/%(grid_label)s/%(version)s",
+    "seperator": "/",
+    "specs": [
+        "const:primavera",
+        "wcrp:primavera:activity",
+        "wcrp:primavera:institute",
+        "wcrp:primavera:model",
+        "wcrp:primavera:experiment",
+        "wcrp:primavera:ensemble",
+        "wcrp:primavera:cmor_table",
+        "wcrp:primavera:variable",
+        "wcrp:primavera:grid_label",
+        "wcrp:primavera:version"
+    ]
+}

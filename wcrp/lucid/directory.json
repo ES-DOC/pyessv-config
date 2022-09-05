@@ -1,0 +1,19 @@
+{
+    "identifier_type": "directory",
+    "scope": "wcrp:lucid",
+    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s # not used",
+    "seperator": "/",
+    "specs": [
+        "const:lucid",
+        "wcrp:lucid:product",
+        "wcrp:lucid:institute",
+        "wcrp:lucid:model",
+        "wcrp:lucid:experiment",
+        "wcrp:lucid:time_frequency",
+        "wcrp:lucid:realm",
+        "wcrp:lucid:cmor_table",
+        "wcrp:lucid:ensemble",
+        "wcrp:lucid:version",
+        "wcrp:lucid:variable"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "identifier_type": "filename",
+    "scope": "wcrp:cordex",
+    "template": "%(variable)s_%(domain)s_%(driving_model)s_%(experiment)s_%(ensemble)s_%(rcm_model)s_%(rcm_version)s_%(time_frequency)s[_%(period_start)s-%(period_end)s].nc",
+    "seperator": "_",
+    "specs": [
+        "wcrp:cordex:variable",
+        "wcrp:cordex:domain",
+        "wcrp:cordex:driving_model",
+        "wcrp:cordex:experiment",
+        "wcrp:cordex:ensemble",
+        "wcrp:cordex:rcm_model",
+        "wcrp:cordex:rcm_version",
+        "wcrp:cordex:time_frequency",
+        "regex:^[0-9]{4}-[0-9]{4}$",
+        "regex:^nc$"
+    ]
+}

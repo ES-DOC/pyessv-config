@@ -1,0 +1,15 @@
+{
+    "identifier_type": "filename",
+    "scope": "wcrp:euclipse",
+    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s[_%(period_start)s-%(period_end)s].nc",
+    "seperator": "_",
+    "specs": [
+        "wcrp:euclipse:variable",
+        "wcrp:euclipse:cmor_table",
+        "wcrp:euclipse:model",
+        "wcrp:euclipse:experiment",
+        "wcrp:euclipse:ensemble",
+        "regex:^[0-9]{4}-[0-9]{4}$",
+        "regex:^nc$"
+    ]
+}

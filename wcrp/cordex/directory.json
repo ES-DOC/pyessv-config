@@ -1,0 +1,20 @@
+{
+    "identifier_type": "directory",
+    "scope": "wcrp:cordex",
+    "template": "%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s",
+    "seperator": "/",
+    "specs": [
+        "const:cordex",
+        "wcrp:cordex:product",
+        "wcrp:cordex:domain",
+        "wcrp:cordex:institute",
+        "wcrp:cordex:driving_model",
+        "wcrp:cordex:experiment",
+        "wcrp:cordex:ensemble",
+        "wcrp:cordex:rcm_model",
+        "wcrp:cordex:rcm_version",
+        "wcrp:cordex:time_frequency",
+        "wcrp:cordex:variable",
+        "wcrp:cordex:version"
+    ]
+}

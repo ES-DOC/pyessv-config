@@ -15,5 +15,6 @@
         "wcrp:cordex-adjust:bias-adjustment",
         "wcrp:cordex-adjust:time-frequency",
         "wcrp:cordex-adjust:variable"
-    ]
+    ],
+    "suffix": "#"
 }

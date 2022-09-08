@@ -13,5 +13,6 @@
         "wcrp:e3sm:data-type",
         "wcrp:e3sm:time-frequency",
         "wcrp:e3sm:ensemble-member"
-    ]
+    ],
+    "suffix": "#"
 }

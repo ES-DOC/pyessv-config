@@ -5,7 +5,7 @@
     "seperator": "_",
     "specs": [
         "ecmwf:c3s-cmip5:variable",
-        "ecmwf:c3s-cmip5:cmor_table",
+        "ecmwf:c3s-cmip5:cmor-table",
         "ecmwf:c3s-cmip5:model",
         "ecmwf:c3s-cmip5:experiment",
         "ecmwf:c3s-cmip5:ensemble",

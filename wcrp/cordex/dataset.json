@@ -15,5 +15,6 @@
         "wcrp:cordex:rcm-version",
         "wcrp:cordex:time-frequency",
         "wcrp:cordex:variable"
-    ]
+    ],
+    "suffix": "#"
 }

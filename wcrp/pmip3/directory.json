@@ -9,9 +9,9 @@
         "wcrp:pmip3:institute",
         "wcrp:pmip3:model",
         "wcrp:pmip3:experiment",
-        "wcrp:pmip3:time_frequency",
+        "wcrp:pmip3:time-frequency",
         "wcrp:pmip3:realm",
-        "wcrp:pmip3:cmor_table",
+        "wcrp:pmip3:cmor-table",
         "wcrp:pmip3:ensemble",
         "wcrp:pmip3:version",
         "wcrp:pmip3:variable"

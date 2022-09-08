@@ -13,5 +13,6 @@
         "wcrp:euclipse:realm",
         "wcrp:euclipse:cmor-table",
         "wcrp:euclipse:ensemble"
-    ]
+    ],
+    "suffix": "#"
 }

@@ -10,5 +10,6 @@
         "wcrp:obs4mips:frequency",
         "wcrp:obs4mips:variable-id",
         "wcrp:obs4mips:grid-label"
-    ]
+    ],
+    "suffix": "#"
 }

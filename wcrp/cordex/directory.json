@@ -8,12 +8,12 @@
         "wcrp:cordex:product",
         "wcrp:cordex:domain",
         "wcrp:cordex:institute",
-        "wcrp:cordex:driving_model",
+        "wcrp:cordex:driving-model",
         "wcrp:cordex:experiment",
         "wcrp:cordex:ensemble",
-        "wcrp:cordex:rcm_model",
-        "wcrp:cordex:rcm_version",
-        "wcrp:cordex:time_frequency",
+        "wcrp:cordex:rcm-model",
+        "wcrp:cordex:rcm-version",
+        "wcrp:cordex:time-frequency",
         "wcrp:cordex:variable",
         "wcrp:cordex:version"
     ]

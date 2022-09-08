@@ -16,5 +16,6 @@
         "wcrp:isimip-ft:land-use-short",
         "wcrp:isimip-ft:time-frequency",
         "wcrp:isimip-ft:variable"
-    ]
+    ],
+    "suffix": "#"
 }

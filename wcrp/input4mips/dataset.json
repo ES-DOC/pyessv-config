@@ -13,5 +13,6 @@
         "wcrp:input4mips:frequency",
         "wcrp:input4mips:variable-id",
         "wcrp:input4mips:grid-label"
-    ]
+    ],
+    "suffix": "#"
 }

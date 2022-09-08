@@ -9,9 +9,9 @@
         "wcrp:euclipse:institute",
         "wcrp:euclipse:model",
         "wcrp:euclipse:experiment",
-        "wcrp:euclipse:time_frequency",
+        "wcrp:euclipse:time-frequency",
         "wcrp:euclipse:realm",
-        "wcrp:euclipse:cmor_table",
+        "wcrp:euclipse:cmor-table",
         "wcrp:euclipse:ensemble",
         "wcrp:euclipse:version",
         "wcrp:euclipse:variable"

@@ -5,7 +5,7 @@
     "seperator": "_",
     "specs": [
         "wcrp:lucid:variable",
-        "wcrp:lucid:cmor_table",
+        "wcrp:lucid:cmor-table",
         "wcrp:lucid:model",
         "wcrp:lucid:experiment",
         "wcrp:lucid:ensemble",

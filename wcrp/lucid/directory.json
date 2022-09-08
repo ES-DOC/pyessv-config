@@ -9,9 +9,9 @@
         "wcrp:lucid:institute",
         "wcrp:lucid:model",
         "wcrp:lucid:experiment",
-        "wcrp:lucid:time_frequency",
+        "wcrp:lucid:time-frequency",
         "wcrp:lucid:realm",
-        "wcrp:lucid:cmor_table",
+        "wcrp:lucid:cmor-table",
         "wcrp:lucid:ensemble",
         "wcrp:lucid:version",
         "wcrp:lucid:variable"

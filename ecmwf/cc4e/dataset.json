@@ -12,5 +12,6 @@
         "ecmwf:cc4e:realization",
         "ecmwf:cc4e:time-frequency",
         "ecmwf:cc4e:variable"
-    ]
+    ],
+    "suffix": "#"
 }

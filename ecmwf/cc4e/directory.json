@@ -5,12 +5,12 @@
     "seperator": "/",
     "specs": [
         "const:cc4e",
-        "ecmwf:cc4e:work_package",
+        "ecmwf:cc4e:work-package",
         "ecmwf:cc4e:product",
-        "ecmwf:cc4e:source_type",
-        "ecmwf:cc4e:source_data_id",
+        "ecmwf:cc4e:source-type",
+        "ecmwf:cc4e:source-data-id",
         "ecmwf:cc4e:realization",
-        "ecmwf:cc4e:time_frequency",
+        "ecmwf:cc4e:time-frequency",
         "ecmwf:cc4e:variable",
         "ecmwf:cc4e:version"
     ]

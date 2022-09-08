@@ -9,9 +9,9 @@
         "wcrp:geomip:institute",
         "wcrp:geomip:model",
         "wcrp:geomip:experiment",
-        "wcrp:geomip:time_frequency",
+        "wcrp:geomip:time-frequency",
         "wcrp:geomip:realm",
-        "wcrp:geomip:cmor_table",
+        "wcrp:geomip:cmor-table",
         "wcrp:geomip:ensemble",
         "wcrp:geomip:version",
         "wcrp:geomip:variable"

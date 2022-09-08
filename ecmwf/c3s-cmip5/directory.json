@@ -9,9 +9,9 @@
         "ecmwf:c3s-cmip5:institute",
         "ecmwf:c3s-cmip5:model",
         "ecmwf:c3s-cmip5:experiment",
-        "ecmwf:c3s-cmip5:time_frequency",
+        "ecmwf:c3s-cmip5:time-frequency",
         "ecmwf:c3s-cmip5:realm",
-        "ecmwf:c3s-cmip5:cmor_table",
+        "ecmwf:c3s-cmip5:cmor-table",
         "ecmwf:c3s-cmip5:ensemble",
         "ecmwf:c3s-cmip5:variable",
         "ecmwf:c3s-cmip5:version"

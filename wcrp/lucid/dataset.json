@@ -13,5 +13,6 @@
         "wcrp:lucid:realm",
         "wcrp:lucid:cmor-table",
         "wcrp:lucid:ensemble"
-    ]
+    ],
+    "suffix": "#"
 }

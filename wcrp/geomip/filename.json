@@ -5,7 +5,7 @@
     "seperator": "_",
     "specs": [
         "wcrp:geomip:variable",
-        "wcrp:geomip:cmor_table",
+        "wcrp:geomip:cmor-table",
         "wcrp:geomip:model",
         "wcrp:geomip:experiment",
         "wcrp:geomip:ensemble",

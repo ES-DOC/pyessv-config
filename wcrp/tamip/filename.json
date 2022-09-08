@@ -5,7 +5,7 @@
     "seperator": "_",
     "specs": [
         "wcrp:tamip:variable",
-        "wcrp:tamip:cmor_table",
+        "wcrp:tamip:cmor-table",
         "wcrp:tamip:model",
         "wcrp:tamip:experiment",
         "wcrp:tamip:ensemble",

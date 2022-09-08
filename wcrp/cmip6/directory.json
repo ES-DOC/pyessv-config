@@ -6,13 +6,13 @@
     "specs": [
         "wcrp:global:mip-era",
         "wcrp:cmip6:activity-id",
-        "wcrp:cmip6:institution_id",
-        "wcrp:cmip6:source_id",
-        "wcrp:cmip6:experiment_id",
-        "wcrp:cmip6:member_id",
-        "wcrp:cmip6:table_id",
-        "wcrp:cmip6:variable_id",
-        "wcrp:cmip6:grid_label",
+        "wcrp:cmip6:institution-id",
+        "wcrp:cmip6:source-id",
+        "wcrp:cmip6:experiment-id",
+        "wcrp:cmip6:member-id",
+        "wcrp:cmip6:table-id",
+        "wcrp:cmip6:variable-id",
+        "wcrp:cmip6:grid-label",
         "wcrp:cmip6:version"
     ]
 }

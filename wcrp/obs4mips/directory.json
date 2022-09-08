@@ -5,11 +5,11 @@
     "seperator": "/",
     "specs": [
         "const:obs4mips",
-        "wcrp:obs4mips:institution_id",
-        "wcrp:obs4mips:source_id",
+        "wcrp:obs4mips:institution-id",
+        "wcrp:obs4mips:source-id",
         "wcrp:obs4mips:frequency",
-        "wcrp:obs4mips:variable_id",
-        "wcrp:obs4mips:grid_label",
+        "wcrp:obs4mips:variable-id",
+        "wcrp:obs4mips:grid-label",
         "wcrp:obs4mips:version"
     ]
 }

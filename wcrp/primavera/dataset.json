@@ -13,5 +13,6 @@
         "wcrp:primavera:cmor-table",
         "wcrp:primavera:variable",
         "wcrp:primavera:grid-label"
-    ]
+    ],
+    "suffix": "#"
 }

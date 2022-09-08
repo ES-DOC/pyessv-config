@@ -15,5 +15,6 @@
         "ecmwf:c3s-cordex:rcm-version",
         "ecmwf:c3s-cordex:time-frequency",
         "ecmwf:c3s-cordex:variable"
-    ]
+    ],
+    "suffix": "#"
 }

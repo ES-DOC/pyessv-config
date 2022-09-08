@@ -9,9 +9,9 @@
         "wcrp:tamip:institute",
         "wcrp:tamip:model",
         "wcrp:tamip:experiment",
-        "wcrp:tamip:time_frequency",
+        "wcrp:tamip:time-frequency",
         "wcrp:tamip:realm",
-        "wcrp:tamip:cmor_table",
+        "wcrp:tamip:cmor-table",
         "wcrp:tamip:ensemble",
         "wcrp:tamip:version",
         "wcrp:tamip:variable"

@@ -4,12 +4,12 @@
     "template": "%(variable_id)s_%(activity_id)s_%(dataset_category)s_%(target_mip)s_%(source_id)s_%(grid_label)s.nc",
     "seperator": "_",
     "specs": [
-        "wcrp:input4mips:variable_id",
-        "wcrp:input4mips:activity_id",
-        "wcrp:input4mips:dataset_category",
-        "wcrp:input4mips:target_mip",
-        "wcrp:input4mips:source_id",
-        "wcrp:input4mips:grid_label",
+        "wcrp:input4mips:variable-id",
+        "wcrp:input4mips:activity-id",
+        "wcrp:input4mips:dataset-category",
+        "wcrp:input4mips:target-mip",
+        "wcrp:input4mips:source-id",
+        "wcrp:input4mips:grid-label",
         "regex:^nc$"
     ]
 }

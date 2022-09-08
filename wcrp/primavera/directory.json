@@ -10,9 +10,9 @@
         "wcrp:primavera:model",
         "wcrp:primavera:experiment",
         "wcrp:primavera:ensemble",
-        "wcrp:primavera:cmor_table",
+        "wcrp:primavera:cmor-table",
         "wcrp:primavera:variable",
-        "wcrp:primavera:grid_label",
+        "wcrp:primavera:grid-label",
         "wcrp:primavera:version"
     ]
 }

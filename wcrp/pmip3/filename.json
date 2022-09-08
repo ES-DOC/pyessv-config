@@ -5,7 +5,7 @@
     "seperator": "_",
     "specs": [
         "wcrp:pmip3:variable",
-        "wcrp:pmip3:cmor_table",
+        "wcrp:pmip3:cmor-table",
         "wcrp:pmip3:model",
         "wcrp:pmip3:experiment",
         "wcrp:pmip3:ensemble",

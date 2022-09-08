@@ -13,5 +13,6 @@
         "wcrp:geomip:realm",
         "wcrp:geomip:cmor-table",
         "wcrp:geomip:ensemble"
-    ]
+    ],
+    "suffix": "#"
 }

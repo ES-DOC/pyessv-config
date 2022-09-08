@@ -13,5 +13,6 @@
         "wcrp:pmip3:realm",
         "wcrp:pmip3:cmor-table",
         "wcrp:pmip3:ensemble"
-    ]
+    ],
+    "suffix": "#"
 }

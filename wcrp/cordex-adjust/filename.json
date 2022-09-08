@@ -6,12 +6,12 @@
     "specs": [
         "wcrp:cordex-adjust:variable",
         "wcrp:cordex-adjust:domain",
-        "wcrp:cordex-adjust:driving_model",
+        "wcrp:cordex-adjust:driving-model",
         "wcrp:cordex-adjust:experiment",
         "wcrp:cordex-adjust:ensemble",
-        "wcrp:cordex-adjust:rcm_model",
-        "wcrp:cordex-adjust:bias_adjustment",
-        "wcrp:cordex-adjust:time_frequency",
+        "wcrp:cordex-adjust:rcm-model",
+        "wcrp:cordex-adjust:bias-adjustment",
+        "wcrp:cordex-adjust:time-frequency",
         "regex:^[0-9]{4}-[0-9]{4}$",
         "regex:^nc$"
     ]

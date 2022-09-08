@@ -8,12 +8,12 @@
         "ecmwf:c3s-cordex:product",
         "ecmwf:c3s-cordex:domain",
         "ecmwf:c3s-cordex:institute",
-        "ecmwf:c3s-cordex:driving_model",
+        "ecmwf:c3s-cordex:driving-model",
         "ecmwf:c3s-cordex:experiment",
         "ecmwf:c3s-cordex:ensemble",
-        "ecmwf:c3s-cordex:rcm_model",
-        "ecmwf:c3s-cordex:rcm_version",
-        "ecmwf:c3s-cordex:time_frequency",
+        "ecmwf:c3s-cordex:rcm-model",
+        "ecmwf:c3s-cordex:rcm-version",
+        "ecmwf:c3s-cordex:time-frequency",
         "ecmwf:c3s-cordex:variable",
         "ecmwf:c3s-cordex:version"
     ]

@@ -13,5 +13,6 @@
         "wcrp:tamip:realm",
         "wcrp:tamip:cmor-table",
         "wcrp:tamip:ensemble"
-    ]
+    ],
+    "suffix": "#"
 }

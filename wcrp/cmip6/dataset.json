@@ -13,5 +13,6 @@
         "wcrp:cmip6:table-id",
         "wcrp:cmip6:variable-id",
         "wcrp:cmip6:grid-label"
-    ]
+    ],
+    "suffix": "#"
 }

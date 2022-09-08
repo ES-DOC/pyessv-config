@@ -13,5 +13,6 @@
         "wcrp:cmip5:realm",
         "wcrp:cmip5:cmor-table",
         "wcrp:cmip5:ensemble"
-    ]
+    ],
+    "suffix": "#"
 }

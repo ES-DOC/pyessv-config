@@ -5,7 +5,7 @@
     "seperator": "_",
     "specs": [
         "wcrp:euclipse:variable",
-        "wcrp:euclipse:cmor_table",
+        "wcrp:euclipse:cmor-table",
         "wcrp:euclipse:model",
         "wcrp:euclipse:experiment",
         "wcrp:euclipse:ensemble",

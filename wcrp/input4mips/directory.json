@@ -5,14 +5,14 @@
     "seperator": "/",
     "specs": [
         "const:input4mips",
-        "wcrp:input4mips:mip_era",
-        "wcrp:input4mips:target_mip",
-        "wcrp:input4mips:institution_id",
-        "wcrp:input4mips:source_id",
+        "wcrp:input4mips:mip-era",
+        "wcrp:input4mips:target-mip",
+        "wcrp:input4mips:institution-id",
+        "wcrp:input4mips:source-id",
         "wcrp:input4mips:realm",
         "wcrp:input4mips:frequency",
-        "wcrp:input4mips:variable_id",
-        "wcrp:input4mips:grid_label",
+        "wcrp:input4mips:variable-id",
+        "wcrp:input4mips:grid-label",
         "wcrp:input4mips:version"
     ]
 }

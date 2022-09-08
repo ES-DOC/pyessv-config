@@ -14,5 +14,6 @@
         "ecmwf:c3s-cmip5:cmor-table",
         "ecmwf:c3s-cmip5:ensemble",
         "ecmwf:c3s-cmip5:variable"
-    ]
+    ],
+    "suffix": "#"
 }

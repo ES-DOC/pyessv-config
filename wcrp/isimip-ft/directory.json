@@ -4,7 +4,7 @@
     "template": "%(root)s/%(project)s/%(product)s/%(model)s/%(experiment)s/%(impact_model)s/%(sector_short)s/%(social_forcing)s/%(co2_forcing)s/%(irrigation_forcing)s/%(land_use_short)s/%(time_frequency)s/%(variable)s/%(version)s",
     "seperator": "/",
     "specs": [
-        "const:isimip-ft",
+        "const:ISIMIP-FT",
         "wcrp:isimip-ft:product",
         "wcrp:isimip-ft:model",
         "wcrp:isimip-ft:experiment",

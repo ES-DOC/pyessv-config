@@ -4,7 +4,7 @@
     "template": "%(root)s/%(project)s/%(product)s/%(domain)s/%(institute)s/%(driving_model)s/%(experiment)s/%(ensemble)s/%(rcm_model)s/%(rcm_version)s/%(time_frequency)s/%(variable)s/%(version)s",
     "seperator": "/",
     "specs": [
-        "const:cordex",
+        "const:CORDEX",
         "wcrp:cordex:product",
         "wcrp:cordex:domain",
         "wcrp:cordex:institute",

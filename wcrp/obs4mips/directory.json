@@ -4,7 +4,7 @@
     "template": "%(root)s/%(activity_id)s/%(institution_id)s/%(source_id)s/%(frequency)s/%(variable_id)s/%(grid_label)s/%(version)s",
     "seperator": "/",
     "specs": [
-        "const:obs4mips",
+        "const:obs4MIPs",
         "wcrp:obs4mips:institution-id",
         "wcrp:obs4mips:source-id",
         "wcrp:obs4mips:frequency",

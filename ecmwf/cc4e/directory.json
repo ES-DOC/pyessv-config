@@ -4,7 +4,7 @@
     "template": "%(root)s/%(project)s/%(work_package)s/%(product)s/%(source_type)s/%(source_data_id)s/%(realization)s/%(time_frequency)s/%(variable)s/%(version)s",
     "seperator": "/",
     "specs": [
-        "const:cc4e",
+        "const:CC4E",
         "ecmwf:cc4e:work-package",
         "ecmwf:cc4e:product",
         "ecmwf:cc4e:source-type",

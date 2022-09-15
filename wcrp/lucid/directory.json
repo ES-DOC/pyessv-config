@@ -4,7 +4,7 @@
     "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s # not used",
     "seperator": "/",
     "specs": [
-        "const:lucid",
+        "const:LUCID",
         "wcrp:lucid:product",
         "wcrp:lucid:institute",
         "wcrp:lucid:model",

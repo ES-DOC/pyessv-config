@@ -4,7 +4,7 @@
     "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "seperator": "/",
     "specs": [
-        "const:pmip3",
+        "const:PMIP3",
         "wcrp:pmip3:product",
         "wcrp:pmip3:institute",
         "wcrp:pmip3:model",

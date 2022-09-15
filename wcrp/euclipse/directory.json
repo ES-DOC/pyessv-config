@@ -4,7 +4,7 @@
     "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "seperator": "/",
     "specs": [
-        "const:euclipse",
+        "const:EUCLIPSE",
         "wcrp:euclipse:product",
         "wcrp:euclipse:institute",
         "wcrp:euclipse:model",

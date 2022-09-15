@@ -4,7 +4,7 @@
     "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "seperator": "/",
     "specs": [
-        "const:tamip",
+        "const:TAMIP",
         "wcrp:tamip:product",
         "wcrp:tamip:institute",
         "wcrp:tamip:model",

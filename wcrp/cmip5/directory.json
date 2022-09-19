@@ -1,19 +1,64 @@
 {
     "identifier_type": "directory",
     "scope": "wcrp:cmip5",
-    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "seperator": "/",
+    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "specs": [
-        "const:CMIP5",
-        "wcrp:cmip5:product",
-        "wcrp:cmip5:institute",
-        "wcrp:cmip5:model",
-        "wcrp:cmip5:experiment",
-        "wcrp:cmip5:time-frequency",
-        "wcrp:cmip5:realm",
-        "wcrp:cmip5:cmor-table",
-        "wcrp:cmip5:ensemble",
-        "wcrp:cmip5:version",
-        "wcrp:cmip5:variable"
-    ]
+        {
+            "type": "const",
+            "value": "CMIP5",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:realm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:version",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip5:variable",
+            "is_required": true
+        }
+    ],
+    "suffix": "#"
 }

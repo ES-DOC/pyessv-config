@@ -1,20 +1,64 @@
 {
     "identifier_type": "dataset",
     "scope": "wcrp:cordex-adjust",
-    "template": "cordex-adjust.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(bias_adjustment)s.%(time_frequency)s.%(variable)s",
     "seperator": ".",
+    "template": "cordex-adjust.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(bias_adjustment)s.%(time_frequency)s.%(variable)s",
     "specs": [
-        "const:cordex-adjust",
-        "wcrp:cordex-adjust:product",
-        "wcrp:cordex-adjust:domain",
-        "wcrp:cordex-adjust:institute",
-        "wcrp:cordex-adjust:driving-model",
-        "wcrp:cordex-adjust:experiment",
-        "wcrp:cordex-adjust:ensemble",
-        "wcrp:cordex-adjust:rcm-name",
-        "wcrp:cordex-adjust:bias-adjustment",
-        "wcrp:cordex-adjust:time-frequency",
-        "wcrp:cordex-adjust:variable"
+        {
+            "type": "const",
+            "value": "cordex-adjust",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:domain",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:driving-model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:rcm-name",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:bias-adjustment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:variable",
+            "is_required": true
+        }
     ],
     "suffix": "#"
 }

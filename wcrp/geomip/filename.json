@@ -1,15 +1,43 @@
 {
     "identifier_type": "filename",
     "scope": "wcrp:geomip",
-    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s[_%(period_start)s-%(period_end)s].nc",
     "seperator": "_",
+    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s[_%(period_start)s-%(period_end)s].nc",
     "specs": [
-        "wcrp:geomip:variable",
-        "wcrp:geomip:cmor-table",
-        "wcrp:geomip:model",
-        "wcrp:geomip:experiment",
-        "wcrp:geomip:ensemble",
-        "regex:^[0-9]{4}-[0-9]{4}$",
-        "regex:^nc$"
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:variable",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "regex",
+            "expression": "^[0-9]{4}-[0-9]{4}$",
+            "is_required": false
+        },
+        {
+            "type": "regex",
+            "expression": "^nc$",
+            "is_required": true
+        }
     ]
 }

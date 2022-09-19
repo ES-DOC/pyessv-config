@@ -1,16 +1,48 @@
 {
     "identifier_type": "filename",
     "scope": "wcrp:cmip6",
-    "template": "%(variable_id)s_%(table_id)s_%(source_id)s_%(experiment_id)s_%(member_id)s_%(grid_label)s[_%(period_start)s-%(period_end)s].nc",
     "seperator": "_",
+    "template": "%(variable_id)s_%(table_id)s_%(source_id)s_%(experiment_id)s_%(member_id)s_%(grid_label)s[_%(period_start)s-%(period_end)s].nc",
     "specs": [
-        "wcrp:cmip6:variable-id",
-        "wcrp:cmip6:table-id",
-        "wcrp:cmip6:source-id",
-        "wcrp:cmip6:experiment-id",
-        "wcrp:cmip6:member-id",
-        "wcrp:cmip6:grid-label",
-        "regex:^[0-9]{4}-[0-9]{4}$",
-        "regex:^nc$"
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:variable-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:table-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:source-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:experiment-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:member-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:grid-label",
+            "is_required": true
+        },
+        {
+            "type": "regex",
+            "expression": "^[0-9]{4}-[0-9]{4}$",
+            "is_required": false
+        },
+        {
+            "type": "regex",
+            "expression": "^nc$",
+            "is_required": true
+        }
     ]
 }

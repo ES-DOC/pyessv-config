@@ -1,19 +1,64 @@
 {
     "identifier_type": "directory",
     "scope": "wcrp:tamip",
-    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "seperator": "/",
+    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "specs": [
-        "const:TAMIP",
-        "wcrp:tamip:product",
-        "wcrp:tamip:institute",
-        "wcrp:tamip:model",
-        "wcrp:tamip:experiment",
-        "wcrp:tamip:time-frequency",
-        "wcrp:tamip:realm",
-        "wcrp:tamip:cmor-table",
-        "wcrp:tamip:ensemble",
-        "wcrp:tamip:version",
-        "wcrp:tamip:variable"
-    ]
+        {
+            "type": "const",
+            "value": "TAMIP",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:realm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:version",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:tamip:variable",
+            "is_required": true
+        }
+    ],
+    "suffix": "#"
 }

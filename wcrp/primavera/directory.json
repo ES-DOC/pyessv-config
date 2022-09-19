@@ -1,18 +1,59 @@
 {
     "identifier_type": "directory",
     "scope": "wcrp:primavera",
-    "template": "%(root)s/%(project)s/%(activity)s/%(institute)s/%(model)s/%(experiment)s/%(ensemble)s/%(cmor_table)s/%(variable)s/%(grid_label)s/%(version)s",
     "seperator": "/",
+    "template": "%(root)s/%(project)s/%(activity)s/%(institute)s/%(model)s/%(experiment)s/%(ensemble)s/%(cmor_table)s/%(variable)s/%(grid_label)s/%(version)s",
     "specs": [
-        "const:PRIMAVERA",
-        "wcrp:primavera:activity",
-        "wcrp:primavera:institute",
-        "wcrp:primavera:model",
-        "wcrp:primavera:experiment",
-        "wcrp:primavera:ensemble",
-        "wcrp:primavera:cmor-table",
-        "wcrp:primavera:variable",
-        "wcrp:primavera:grid-label",
-        "wcrp:primavera:version"
-    ]
+        {
+            "type": "const",
+            "value": "PRIMAVERA",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:activity",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:variable",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:grid-label",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:version",
+            "is_required": true
+        }
+    ],
+    "suffix": "#"
 }

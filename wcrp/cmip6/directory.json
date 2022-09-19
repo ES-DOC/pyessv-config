@@ -1,18 +1,59 @@
 {
     "identifier_type": "directory",
     "scope": "wcrp:cmip6",
-    "template": "%(root)s/%(mip_era)s/%(activity_drs)s/%(institution_id)s/%(source_id)s/%(experiment_id)s/%(member_id)s/%(table_id)s/%(variable_id)s/%(grid_label)s/%(version)s",
     "seperator": "/",
+    "template": "%(root)s/%(mip_era)s/%(activity_drs)s/%(institution_id)s/%(source_id)s/%(experiment_id)s/%(member_id)s/%(table_id)s/%(variable_id)s/%(grid_label)s/%(version)s",
     "specs": [
-        "const:CMIP6",
-        "wcrp:cmip6:activity-id",
-        "wcrp:cmip6:institution-id",
-        "wcrp:cmip6:source-id",
-        "wcrp:cmip6:experiment-id",
-        "wcrp:cmip6:member-id",
-        "wcrp:cmip6:table-id",
-        "wcrp:cmip6:variable-id",
-        "wcrp:cmip6:grid-label",
-        "wcrp:cmip6:version"
-    ]
+        {
+            "type": "const",
+            "value": "CMIP6",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:activity-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:institution-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:source-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:experiment-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:member-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:table-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:variable-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:grid-label",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cmip6:version",
+            "is_required": true
+        }
+    ],
+    "suffix": "#"
 }

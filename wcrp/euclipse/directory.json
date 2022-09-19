@@ -1,19 +1,64 @@
 {
     "identifier_type": "directory",
     "scope": "wcrp:euclipse",
-    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "seperator": "/",
+    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "specs": [
-        "const:EUCLIPSE",
-        "wcrp:euclipse:product",
-        "wcrp:euclipse:institute",
-        "wcrp:euclipse:model",
-        "wcrp:euclipse:experiment",
-        "wcrp:euclipse:time-frequency",
-        "wcrp:euclipse:realm",
-        "wcrp:euclipse:cmor-table",
-        "wcrp:euclipse:ensemble",
-        "wcrp:euclipse:version",
-        "wcrp:euclipse:variable"
-    ]
+        {
+            "type": "const",
+            "value": "EUCLIPSE",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:realm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:version",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:euclipse:variable",
+            "is_required": true
+        }
+    ],
+    "suffix": "#"
 }

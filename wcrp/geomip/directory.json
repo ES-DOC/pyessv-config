@@ -1,19 +1,64 @@
 {
     "identifier_type": "directory",
     "scope": "wcrp:geomip",
-    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "seperator": "/",
+    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s",
     "specs": [
-        "const:GeoMIP",
-        "wcrp:geomip:product",
-        "wcrp:geomip:institute",
-        "wcrp:geomip:model",
-        "wcrp:geomip:experiment",
-        "wcrp:geomip:time-frequency",
-        "wcrp:geomip:realm",
-        "wcrp:geomip:cmor-table",
-        "wcrp:geomip:ensemble",
-        "wcrp:geomip:version",
-        "wcrp:geomip:variable"
-    ]
+        {
+            "type": "const",
+            "value": "GeoMIP",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:realm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:version",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:variable",
+            "is_required": true
+        }
+    ],
+    "suffix": "#"
 }

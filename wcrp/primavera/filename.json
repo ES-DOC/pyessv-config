@@ -1,16 +1,48 @@
 {
     "identifier_type": "filename",
     "scope": "wcrp:primavera",
-    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s_%(grid_label)s_[%(period_start)s-%(period_end)s].nc",
     "seperator": "_",
+    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s_%(grid_label)s_[%(period_start)s-%(period_end)s].nc",
     "specs": [
-        "wcrp:primavera:variable",
-        "wcrp:primavera:cmor-table",
-        "wcrp:primavera:model",
-        "wcrp:primavera:experiment",
-        "wcrp:primavera:ensemble",
-        "wcrp:primavera:grid-label",
-        "regex:^[0-9]{4}-[0-9]{4}$",
-        "regex:^nc$"
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:variable",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:primavera:grid-label",
+            "is_required": true
+        },
+        {
+            "type": "regex",
+            "expression": "^[0-9]{4}-[0-9]{4}$",
+            "is_required": false
+        },
+        {
+            "type": "regex",
+            "expression": "^nc$",
+            "is_required": true
+        }
     ]
 }

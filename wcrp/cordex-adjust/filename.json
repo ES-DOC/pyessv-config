@@ -1,18 +1,58 @@
 {
     "identifier_type": "filename",
     "scope": "wcrp:cordex-adjust",
-    "template": "%(variable)s_%(domain)s_%(driving_model)s_%(experiment)s_%(ensemble)s_%(rcm_model)s_%(bias_adjustment)s_%(time_frequency)s[_%(period_start)s-%(period_end)s].nc",
     "seperator": "_",
+    "template": "%(variable)s_%(domain)s_%(driving_model)s_%(experiment)s_%(ensemble)s_%(rcm_model)s_%(bias_adjustment)s_%(time_frequency)s[_%(period_start)s-%(period_end)s].nc",
     "specs": [
-        "wcrp:cordex-adjust:variable",
-        "wcrp:cordex-adjust:domain",
-        "wcrp:cordex-adjust:driving-model",
-        "wcrp:cordex-adjust:experiment",
-        "wcrp:cordex-adjust:ensemble",
-        "wcrp:cordex-adjust:rcm-model",
-        "wcrp:cordex-adjust:bias-adjustment",
-        "wcrp:cordex-adjust:time-frequency",
-        "regex:^[0-9]{4}-[0-9]{4}$",
-        "regex:^nc$"
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:variable",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:domain",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:driving-model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:rcm-model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:bias-adjustment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex-adjust:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "regex",
+            "expression": "^[0-9]{4}-[0-9]{4}$",
+            "is_required": false
+        },
+        {
+            "type": "regex",
+            "expression": "^nc$",
+            "is_required": true
+        }
     ]
 }

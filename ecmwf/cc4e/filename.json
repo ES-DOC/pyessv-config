@@ -1,19 +1,63 @@
 {
     "identifier_type": "filename",
     "scope": "ecmwf:cc4e",
-    "template": "%(variable)s_%(project)s_%(work_package)s_%(product)s_%(source_type)s_%(source_data_id)s_%(realization)s_%(domain)s_%(time_frequency)s_[%(period_start)s-%(period_end)s].nc",
     "seperator": "_",
+    "template": "%(variable)s_%(project)s_%(work_package)s_%(product)s_%(source_type)s_%(source_data_id)s_%(realization)s_%(domain)s_%(time_frequency)s_[%(period_start)s-%(period_end)s].nc",
     "specs": [
-        "const:cc4e",
-        "ecmwf:cc4e:project",
-        "ecmwf:cc4e:work-package",
-        "ecmwf:cc4e:product",
-        "ecmwf:cc4e:source-type",
-        "ecmwf:cc4e:source-data-id",
-        "ecmwf:cc4e:realization",
-        "ecmwf:cc4e:domain",
-        "ecmwf:cc4e:time-frequency",
-        "regex:^[0-9]{4}-[0-9]{4}$",
-        "regex:^nc$"
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:variable",
+            "is_required": true
+        },
+        {
+            "type": "const",
+            "value": "cc4e",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:work-package",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:source-type",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:source-data-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:realization",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:domain",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "regex",
+            "expression": "^[0-9]{4}-[0-9]{4}$",
+            "is_required": false
+        },
+        {
+            "type": "regex",
+            "expression": "^nc$",
+            "is_required": true
+        }
     ]
 }

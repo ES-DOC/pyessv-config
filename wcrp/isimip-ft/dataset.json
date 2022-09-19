@@ -1,21 +1,74 @@
 {
     "identifier_type": "dataset",
     "scope": "wcrp:isimip-ft",
-    "template": "%(project)s.%(product)s.%(impact_model)s.%(sector_short)s.%(model)s.%(experiment)s.%(social_forcing)s.%(co2_forcing)s.%(irrigation_forcing)s.%(land_use_short)s.%(time_frequency)s.%(variable)s",
     "seperator": ".",
+    "template": "%(project)s.%(product)s.%(impact_model)s.%(sector_short)s.%(model)s.%(experiment)s.%(social_forcing)s.%(co2_forcing)s.%(irrigation_forcing)s.%(land_use_short)s.%(time_frequency)s.%(variable)s",
     "specs": [
-        "const:isimip-ft",
-        "wcrp:isimip-ft:product",
-        "wcrp:isimip-ft:impact-model",
-        "wcrp:isimip-ft:sector-short",
-        "wcrp:isimip-ft:model",
-        "wcrp:isimip-ft:experiment",
-        "wcrp:isimip-ft:social-forcing",
-        "wcrp:isimip-ft:co2-forcing",
-        "wcrp:isimip-ft:irrigation-forcing",
-        "wcrp:isimip-ft:land-use-short",
-        "wcrp:isimip-ft:time-frequency",
-        "wcrp:isimip-ft:variable"
+        {
+            "type": "const",
+            "value": "isimip-ft",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:project",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:impact-model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:sector-short",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:social-forcing",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:co2-forcing",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:irrigation-forcing",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:land-use-short",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:isimip-ft:variable",
+            "is_required": true
+        }
     ],
     "suffix": "#"
 }

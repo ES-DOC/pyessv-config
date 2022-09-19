@@ -1,19 +1,59 @@
 {
     "identifier_type": "dataset",
     "scope": "ecmwf:c3s-cmip5",
-    "template": "c3s-cmip5.%(product)s.%(institute)s.%(model)s.%(experiment)s.%(time_frequency)s.%(realm)s.%(cmor_table)s.%(ensemble)s.%(variable)s",
     "seperator": ".",
+    "template": "c3s-cmip5.%(product)s.%(institute)s.%(model)s.%(experiment)s.%(time_frequency)s.%(realm)s.%(cmor_table)s.%(ensemble)s.%(variable)s",
     "specs": [
-        "const:c3s-cmip5",
-        "ecmwf:c3s-cmip5:product",
-        "ecmwf:c3s-cmip5:institute",
-        "ecmwf:c3s-cmip5:model",
-        "ecmwf:c3s-cmip5:experiment",
-        "ecmwf:c3s-cmip5:time-frequency",
-        "ecmwf:c3s-cmip5:realm",
-        "ecmwf:c3s-cmip5:cmor-table",
-        "ecmwf:c3s-cmip5:ensemble",
-        "ecmwf:c3s-cmip5:variable"
+        {
+            "type": "const",
+            "value": "c3s-cmip5",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:realm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:variable",
+            "is_required": true
+        }
     ],
     "suffix": "#"
 }

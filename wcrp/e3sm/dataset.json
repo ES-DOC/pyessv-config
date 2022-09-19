@@ -1,18 +1,64 @@
 {
     "identifier_type": "dataset",
     "scope": "wcrp:e3sm",
-    "template": "%(source)s.%(model_version)s.%(experiment)s.%(atmos_grid_resolution)s_atm_%(ocean_grid_resolution)s_ocean.%(realm)s.%(regridding)s.%(data_type)s.%(time_frequency)s.%(ensemble_member)s",
     "seperator": ".",
+    "template": "%(source)s.%(model_version)s.%(experiment)s.%(atmos_grid_resolution)s_atm_%(ocean_grid_resolution)s_ocean.%(realm)s.%(regridding)s.%(data_type)s.%(time_frequency)s.%(ensemble_member)s",
     "specs": [
-        "const:e3sm",
-        "wcrp:e3sm:model-version",
-        "wcrp:e3sm:experiment",
-        "wcrp:e3sm:atmos-grid-resolution)s-atm-%(ocean-grid-resolution)s-oce",
-        "wcrp:e3sm:realm",
-        "wcrp:e3sm:regridding",
-        "wcrp:e3sm:data-type",
-        "wcrp:e3sm:time-frequency",
-        "wcrp:e3sm:ensemble-member"
+        {
+            "type": "const",
+            "value": "e3sm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:source",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:model-version",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:atmos-grid-resolution",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:ocean-grid-resolution",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:realm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:regridding",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:data-type",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:e3sm:ensemble-member",
+            "is_required": true
+        }
     ],
     "suffix": "#"
 }

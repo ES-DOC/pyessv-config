@@ -1,18 +1,54 @@
 {
     "identifier_type": "dataset",
     "scope": "wcrp:lucid",
-    "template": "lucid.%(product)s.%(institute)s.%(model)s.%(experiment)s.%(time_frequency)s.%(realm)s.%(cmor_table)s.%(ensemble)s",
     "seperator": ".",
+    "template": "lucid.%(product)s.%(institute)s.%(model)s.%(experiment)s.%(time_frequency)s.%(realm)s.%(cmor_table)s.%(ensemble)s",
     "specs": [
-        "const:lucid",
-        "wcrp:lucid:product",
-        "wcrp:lucid:institute",
-        "wcrp:lucid:model",
-        "wcrp:lucid:experiment",
-        "wcrp:lucid:time-frequency",
-        "wcrp:lucid:realm",
-        "wcrp:lucid:cmor-table",
-        "wcrp:lucid:ensemble"
+        {
+            "type": "const",
+            "value": "lucid",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:realm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:ensemble",
+            "is_required": true
+        }
     ],
     "suffix": "#"
 }

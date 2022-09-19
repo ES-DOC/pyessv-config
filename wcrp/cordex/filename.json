@@ -1,18 +1,58 @@
 {
     "identifier_type": "filename",
     "scope": "wcrp:cordex",
-    "template": "%(variable)s_%(domain)s_%(driving_model)s_%(experiment)s_%(ensemble)s_%(rcm_model)s_%(rcm_version)s_%(time_frequency)s[_%(period_start)s-%(period_end)s].nc",
     "seperator": "_",
+    "template": "%(variable)s_%(domain)s_%(driving_model)s_%(experiment)s_%(ensemble)s_%(rcm_model)s_%(rcm_version)s_%(time_frequency)s[_%(period_start)s-%(period_end)s].nc",
     "specs": [
-        "wcrp:cordex:variable",
-        "wcrp:cordex:domain",
-        "wcrp:cordex:driving-model",
-        "wcrp:cordex:experiment",
-        "wcrp:cordex:ensemble",
-        "wcrp:cordex:rcm-model",
-        "wcrp:cordex:rcm-version",
-        "wcrp:cordex:time-frequency",
-        "regex:^[0-9]{4}-[0-9]{4}$",
-        "regex:^nc$"
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:variable",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:domain",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:driving-model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:rcm-model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:rcm-version",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "regex",
+            "expression": "^[0-9]{4}-[0-9]{4}$",
+            "is_required": false
+        },
+        {
+            "type": "regex",
+            "expression": "^nc$",
+            "is_required": true
+        }
     ]
 }

@@ -1,19 +1,64 @@
 {
     "identifier_type": "directory",
     "scope": "wcrp:lucid",
-    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s # not used",
     "seperator": "/",
+    "template": "%(root)s/%(project)s/%(product)s/%(institute)s/%(model)s/%(experiment)s/%(time_frequency)s/%(realm)s/%(cmor_table)s/%(ensemble)s/%(version)s/%(variable)s # not used",
     "specs": [
-        "const:LUCID",
-        "wcrp:lucid:product",
-        "wcrp:lucid:institute",
-        "wcrp:lucid:model",
-        "wcrp:lucid:experiment",
-        "wcrp:lucid:time-frequency",
-        "wcrp:lucid:realm",
-        "wcrp:lucid:cmor-table",
-        "wcrp:lucid:ensemble",
-        "wcrp:lucid:version",
-        "wcrp:lucid:variable"
-    ]
+        {
+            "type": "const",
+            "value": "LUCID",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:realm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:version",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:lucid:variable",
+            "is_required": true
+        }
+    ],
+    "suffix": "#"
 }

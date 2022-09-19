@@ -1,15 +1,43 @@
 {
     "identifier_type": "filename",
     "scope": "wcrp:pmip3",
-    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s[_%(period_start)s-%(period_end)s].nc",
     "seperator": "_",
+    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s[_%(period_start)s-%(period_end)s].nc",
     "specs": [
-        "wcrp:pmip3:variable",
-        "wcrp:pmip3:cmor-table",
-        "wcrp:pmip3:model",
-        "wcrp:pmip3:experiment",
-        "wcrp:pmip3:ensemble",
-        "regex:^[0-9]{4}-[0-9]{4}$",
-        "regex:^nc$"
+        {
+            "type": "collection",
+            "namespace": "wcrp:pmip3:variable",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:pmip3:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:pmip3:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:pmip3:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:pmip3:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "regex",
+            "expression": "^[0-9]{4}-[0-9]{4}$",
+            "is_required": false
+        },
+        {
+            "type": "regex",
+            "expression": "^nc$",
+            "is_required": true
+        }
     ]
 }

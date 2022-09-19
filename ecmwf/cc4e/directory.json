@@ -1,17 +1,54 @@
 {
     "identifier_type": "directory",
     "scope": "ecmwf:cc4e",
-    "template": "%(root)s/%(project)s/%(work_package)s/%(product)s/%(source_type)s/%(source_data_id)s/%(realization)s/%(time_frequency)s/%(variable)s/%(version)s",
     "seperator": "/",
+    "template": "%(root)s/%(project)s/%(work_package)s/%(product)s/%(source_type)s/%(source_data_id)s/%(realization)s/%(time_frequency)s/%(variable)s/%(version)s",
     "specs": [
-        "const:CC4E",
-        "ecmwf:cc4e:work-package",
-        "ecmwf:cc4e:product",
-        "ecmwf:cc4e:source-type",
-        "ecmwf:cc4e:source-data-id",
-        "ecmwf:cc4e:realization",
-        "ecmwf:cc4e:time-frequency",
-        "ecmwf:cc4e:variable",
-        "ecmwf:cc4e:version"
-    ]
+        {
+            "type": "const",
+            "value": "CC4E",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:work-package",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:source-type",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:source-data-id",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:realization",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:variable",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:cc4e:version",
+            "is_required": true
+        }
+    ],
+    "suffix": "#"
 }

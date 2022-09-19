@@ -1,18 +1,54 @@
 {
     "identifier_type": "dataset",
     "scope": "wcrp:geomip",
-    "template": "geomip.%(product)s.%(institute)s.%(model)s.%(experiment)s.%(time_frequency)s.%(realm)s.%(cmor_table)s.%(ensemble)s",
     "seperator": ".",
+    "template": "geomip.%(product)s.%(institute)s.%(model)s.%(experiment)s.%(time_frequency)s.%(realm)s.%(cmor_table)s.%(ensemble)s",
     "specs": [
-        "const:geomip",
-        "wcrp:geomip:product",
-        "wcrp:geomip:institute",
-        "wcrp:geomip:model",
-        "wcrp:geomip:experiment",
-        "wcrp:geomip:time-frequency",
-        "wcrp:geomip:realm",
-        "wcrp:geomip:cmor-table",
-        "wcrp:geomip:ensemble"
+        {
+            "type": "const",
+            "value": "geomip",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:realm",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:geomip:ensemble",
+            "is_required": true
+        }
     ],
     "suffix": "#"
 }

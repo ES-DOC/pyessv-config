@@ -1,20 +1,64 @@
 {
     "identifier_type": "dataset",
     "scope": "wcrp:cordex",
-    "template": "cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s",
     "seperator": ".",
+    "template": "cordex.%(product)s.%(domain)s.%(institute)s.%(driving_model)s.%(experiment)s.%(ensemble)s.%(rcm_name)s.%(rcm_version)s.%(time_frequency)s.%(variable)s",
     "specs": [
-        "const:cordex",
-        "wcrp:cordex:product",
-        "wcrp:cordex:domain",
-        "wcrp:cordex:institute",
-        "wcrp:cordex:driving-model",
-        "wcrp:cordex:experiment",
-        "wcrp:cordex:ensemble",
-        "wcrp:cordex:rcm-name",
-        "wcrp:cordex:rcm-version",
-        "wcrp:cordex:time-frequency",
-        "wcrp:cordex:variable"
+        {
+            "type": "const",
+            "value": "cordex",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:product",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:domain",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:institute",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:driving-model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:rcm-name",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:rcm-version",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:time-frequency",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "wcrp:cordex:variable",
+            "is_required": true
+        }
     ],
     "suffix": "#"
 }

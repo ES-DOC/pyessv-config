@@ -1,15 +1,43 @@
 {
     "identifier_type": "filename",
     "scope": "ecmwf:c3s-cmip5",
-    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s[_%(period_start)s-%(period_end)s].nc",
     "seperator": "_",
+    "template": "%(variable)s_%(cmor_table)s_%(model)s_%(experiment)s_%(ensemble)s[_%(period_start)s-%(period_end)s].nc",
     "specs": [
-        "ecmwf:c3s-cmip5:variable",
-        "ecmwf:c3s-cmip5:cmor-table",
-        "ecmwf:c3s-cmip5:model",
-        "ecmwf:c3s-cmip5:experiment",
-        "ecmwf:c3s-cmip5:ensemble",
-        "regex:^[0-9]{4}-[0-9]{4}$",
-        "regex:^nc$"
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:variable",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:cmor-table",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:model",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:experiment",
+            "is_required": true
+        },
+        {
+            "type": "collection",
+            "namespace": "ecmwf:c3s-cmip5:ensemble",
+            "is_required": true
+        },
+        {
+            "type": "regex",
+            "expression": "^[0-9]{4}-[0-9]{4}$",
+            "is_required": false
+        },
+        {
+            "type": "regex",
+            "expression": "^nc$",
+            "is_required": true
+        }
     ]
 }

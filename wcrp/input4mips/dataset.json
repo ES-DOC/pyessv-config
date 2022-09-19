@@ -6,12 +6,7 @@
     "specs": [
         {
             "type": "const",
-            "value": "input4mips",
-            "is_required": true
-        },
-        {
-            "type": "collection",
-            "namespace": "wcrp:input4mips:activity-id",
+            "value": "input4MIPs",
             "is_required": true
         },
         {
